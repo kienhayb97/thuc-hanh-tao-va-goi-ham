@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timSoLonNhat(daySo) {
+
+        let max=daySo[0]
+        let viTri=0
+        for (let i=0;i<daySo.length;i++){
+            if (daySo[i]>max){
+                max=daySo[i];
+            }
+        } return max
+    }
+   function timViTriMax(daySo,max){
+       let viTri=0
+       for (let i=0;i<daySo.length;i++){
+           if (daySo[i]===max){
+               viTri=i
+           }
+       } return viTri
+   }
+    let daySo1=[1,2,3,4,5,6,9,7,6,5]
+    alert(timSoLonNhat(daySo1));
+    let maxDay = timSoLonNhat(daySo1)
+    alert(timViTriMax(daySo1,maxDay))
+</script>
+</body>
+</html>
